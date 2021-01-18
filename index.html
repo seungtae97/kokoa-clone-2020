@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <meta
+            name="viewport"
+            content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
+        />
+        <link type="text/css" rel="stylesheet" href="css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/login.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="mobile">
+            <header>
+                <div class="phone-infomation">
+                    <ul>
+                        <li>
+                            <span>No Service </span>
+                            <i class="fas fa-wifi"></i>
+                        </li>
+                        <li>
+                            <span>09:26</span>
+                        </li>
+                        <li>
+                            <span>100%</span>
+                            <i class="fas fa-battery-full"></i>
+                            <i class="fas fa-bolt"></i>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="login">
+                <div class="login-header">
+                    <h1 class="login-header__title">mongle</h1>
+                    <p class="login-header__sub">
+                        사이트 이용을 위해서는 로그인이 필요합니다.
+                    </p>
+                </div>
+                <form id="login-form" method="get" action="./friends.html">
+                    <div class="login-form__field">
+                        <span><i class="fas fa-envelope"></i></span>
+                        <input
+                            required
+                            type="email"
+                            id="email"
+                            placeholder="example@naver.com"
+                        />
+                    </div>
+                    <div class="login-form__field">
+                        <span><i class="fas fa-lock"></i></span>
+                        <input
+                            required
+                            type="password"
+                            id="password"
+                            placeholder="password"
+                        />
+                    </div>
+                    <input type="submit" value=" login" />
+                    <div class="find-user">forgot password or username?</div>
+                </form>
+            </div>
+        </div>
+        <div class="desktop">
+            <h1>화면 사이즈가 너무 큽니다.<br />화면을 줄여주세요</h1>
+        </div>
+    </body>
+</html>

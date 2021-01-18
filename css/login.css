@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 77%;
+    margin: 30px;
+    animation: fadeIn 1s linear;
+}
+
+.login-header {
+    text-align: center;
+}
+@keyframes rotate360 {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+.login-header .login-header__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Gaegu", cursive;
+    animation: rotate360 3s ease-in-out infinite;
+}
+
+.login-header .login-header__sub {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #646464;
+}
+
+/* LOGIN FORM START*/
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+#login-form .login-form__field {
+    position: relative;
+}
+#login-form .login-form__field span {
+    position: absolute;
+    left: 24px;
+    top: 18px;
+}
+#login-form .login-form__field span i {
+    color: #c4c9cb;
+    font-size: 20px;
+}
+#login-form .login-form__field input {
+    margin: 0px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 15px 20px 15px 56px;
+    background: var(--base-color);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: inset -4px -2px 8px #ffffff,
+        inset 4px 2px 8px rgba(189, 195, 197, 0.48);
+    border-radius: 20px;
+    min-height: 40px;
+    box-sizing: border-box;
+    color: #333;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form .login-form__field input:focus {
+    border: 2px solid rgb(255 110 121);
+}
+#login-form input::placeholder {
+    color: #bdc3c5;
+}
+#login-form input[type="submit"] {
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-sizing: border-box;
+    box-shadow: -4px -2px 16px #ffffff, 4px 2px 16px rgba(255, 110, 121, 0.48);
+    border-radius: 20px;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+#login-form .find-user {
+    text-align: center;
+    margin-top: 40px;
+    color: #646464;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

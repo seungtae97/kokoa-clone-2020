@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+header {
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.06);
+}
+.setting-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.setting-nav__title {
+    font-size: 32px;
+    font-family: "Gaegu";
+}
+.setting-nav__back,
+.setting-nav__search {
+    font-size: 24px;
+}
+.setting {
+    animation: fadeIn 1s linear;
+    margin: 40px 20px;
+    padding-bottom: 100px;
+}
+.setting ul {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #b6b6b6;
+    box-shadow: 0px 1px 1px #ffffff;
+}
+.setting ul:last-child {
+    border: none;
+    box-shadow: none;
+}
+.setting ul li {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0 15px;
+}
+.setting ul li:last-child {
+    margin: 0;
+}
+.setting ul li i {
+    font-size: 20px;
+    margin-right: 15px;
+    width: 25px;
+}
+.setting ul li p {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.setting ul li span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #b6b6b6;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

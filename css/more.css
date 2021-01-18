@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+header {
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.06);
+}
+
+.top-nav__icon li:last-child {
+    position: relative;
+}
+.top-nav__icon li:last-child::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    right: -5px;
+    top: -5px;
+    border-radius: 10px;
+}
+.more {
+    margin: 40px 20px;
+    padding-bottom: 100px;
+    animation: fadeIn 1s linear;
+}
+.my-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.my-profile-paint {
+    display: flex;
+    align-items: center;
+}
+.my-profile-paint img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.my-profile__infomation h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #333;
+}
+.my-profile__infomation p {
+    font-size: 16px;
+    color: #b6b6b6;
+}
+.my-profile__infomation p span i {
+    color: tomato;
+}
+.content-menu {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.content-menu li {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.content-menu li:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    right: 15px;
+    top: -4px;
+    border-radius: 10px;
+}
+.content-menu li i {
+    font-size: 32px;
+    color: #616161;
+    margin-bottom: 10px;
+}
+.content-menu li p {
+    font-size: 12px;
+}
+
+.suggestions-menu {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.suggestions-menu li {
+    width: 25%;
+    text-align: center;
+}
+.suggestions-menu li p {
+    font-size: 12px;
+    color: #b6b6b6;
+}
+.suggestions-menu li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

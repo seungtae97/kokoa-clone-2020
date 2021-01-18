@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+header {
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.06);
+    background: white;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.top-nav__icon {
+    display: flex;
+}
+.top-nav__icon li {
+    font-size: 22px;
+    margin-right: 25px;
+}
+.top-nav__icon li:last-child {
+    margin-right: 0px;
+}
+.top-nav__title {
+    font-size: 32px;
+    font-family: "Gaegu";
+}
+
+nav {
+    position: fixed;
+    bottom: 20px;
+    height: 80px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 80px;
+    background: var(--base-color);
+    box-shadow: -4.25926px -4.25926px 17.037px #ffffff,
+        4.25926px 4.25926px 17.037px rgba(189, 195, 197, 0.5);
+    border-radius: 57.0741px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+nav ul li.active {
+    background: var(--base-color);
+    box-shadow: -4.25926px -4.25926px 8.51852px #ffffff,
+        4.25926px 4.25926px 8.51852px rgba(189, 195, 197, 0.3),
+        inset -1.7037px -1.7037px 3.40741px rgba(189, 195, 197, 0.1),
+        inset 1.7037px 1.7037px 3.40741px #ffffff;
+}
+nav ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 8px;
+}
+nav ul li.active a i {
+    color: var(--main-color);
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(80px);
+    opacity: 0;
+    animation: upButtonAnimation 0.3s ease-in-out forwards;
+}
+nav ul li:nth-child(2) {
+    position: relative;
+    animation-delay: 0.2s;
+}
+nav ul li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+nav ul li:last-child {
+    animation-delay: 0.6s;
+}
+nav ul li:nth-child(2) span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    top: 5px;
+    right: 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    animation: notificationAction 2s ease-in-out infinite;
+}
+nav ul li:last-child {
+    position: relative;
+}
+nav ul li:last-child::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    right: 10px;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.list-title {
+    margin-bottom: 15px;
+    color: #616161;
+    position: relative;
+}
+.list-line {
+    background: #bdc3c5;
+    box-shadow: 0px 1px 1px #ffffff;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 25px;
+}
+
+.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff6e6e;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Gaegu";
+}
+.desktop h1 {
+    color: #fff;
+}
+:root {
+    --main-color: #ff6e79;
+    --base-color: #f3f3f4;
+}
+@media screen and (max-width: 645px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+@keyframes notificationAction {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(180deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+@keyframes upButtonAnimation {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

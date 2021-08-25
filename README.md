@@ -1,3 +1,3 @@
 # Kokoa Clone 2020
-
-HTML & CSS are so much fun!
+## Demo
+https://seungtae97.github.io/kokoa-clone-2020/
